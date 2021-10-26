@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CTR model
 * This project implements common typical Click-Through-Rate(CTR) model in recommender system by pytorch.
 
@@ -81,3 +82,6 @@ https://github.com/zhougr1993/DeepInterestNetwork
 * Referring the design from [DeepCTR](https://github.com/shenweichen/DeepCTR),
   the features are divided into dense (class Number), sparse (class Category),
   sequence (class Sequence) types.
+=======
+# CTRmodel_pytorch
+>>>>>>> d6302eeabc43a891e759a35a1755a4894d379b23
