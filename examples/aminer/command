@@ -1,0 +1,5 @@
+/home/hzp/anaconda3/bin/torch-model-archiver --model-name aminer_RS_rank --version 1.0 --model-file /home/hzp/CTRmodel/base_model_0/base_model/pytorch/din.py --serialized-file /home/hzp/CTRmodel/model_serve/model_DIN.pth --export-path /home/hzp/CTRmodel/model_serve --extra-files /home/hzp/CTRmodel/base_model_0 --handler /home/hzp/CTRmodel/model_serve/myHandler.py -f
+/home/hzp/anaconda3/bin/torch-model-archiver --model-name aminer_RS_rank --version 1.0 --model-file /home/hzp/CTRmodel/model_serve/din/din.py --serialized-file /home/hzp/CTRmodel/model_serve/model_DIN.pth --export-path /home/hzp/CTRmodel/model_serve --extra-files /home/hzp/CTRmodel/base_model_0 --handler /home/hzp/CTRmodel/model_serve/myHandler.py -f
+
+torchserve --start --ncs --model-store /home/hzp/CTRmodel/model_serve --models aminer_RS_rank.mar --ts-config /home/hzp/CTRmodel/model_serve/config.properties
+torchserve --stop
