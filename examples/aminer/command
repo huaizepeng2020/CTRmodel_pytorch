@@ -3,3 +3,10 @@
 
 torchserve --start --ncs --model-store /home/hzp/CTRmodel/model_serve --models aminer_RS_rank.mar --ts-config /home/hzp/CTRmodel/model_serve/config.properties
 torchserve --stop
+
+
+
+github
+
+git pull origin master --allow-unrelated-histories
+git push --set-upstream origin master

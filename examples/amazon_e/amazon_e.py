@@ -14,7 +14,7 @@ from sklearn.metrics import roc_auc_score
 import sys
 import pickle
 
-sys.path.append('/raid/huaizepeng/DIN&DIEN_MIT')
+sys.path.append('/home/hzp/CTRmodel')
 
 from base_model.features import Number, Category, Sequence, Features
 from base_model.transformers.column import (
@@ -25,8 +25,8 @@ from base_model.pytorch import WideDeep, DeepFM, DNN, DIN, DIEN, AttentionGroup
 
 from base_model.pytorch.functions import fit, predict, create_dataloader_fn
 
-pwd = '/raid/huaizepeng/DIN&DIEN_MIT/examples/amazon_e'
-
+# pwd = '/raid/huaizepeng/DIN&DIEN_MIT/examples/amazon_e'
+pwd = '/home/hzp/CTRmodel/examples/amazon_e/'
 
 SEQ_MAX_LEN = 100  # maximum sequence length
 BATCH_SIZE = 128
